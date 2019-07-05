@@ -30,7 +30,7 @@ faktory
 node ./fclient.js
 ```
 
-Lastly start a worker process which fetches jobs from Faktory and
+3. Lastly start a worker process which fetches jobs from Faktory and
 executes them:
 
 ```
