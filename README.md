@@ -17,20 +17,22 @@ Upgrade to the latest version in the future with `brew upgrade faktory`.
 
 ## Running the Example
 
-1. For this example, we will need to start Faktory first.
+You'll need to open three Terminal windows/tabs.
+
+1. In tab 1, start Faktory.
 
 
 ```
 faktory
 ```
 
-2. Now start a client process pushing a new job to Faktory every second.
+2. In tab 2, start a client process pushing a new job to Faktory every second.
 
 ```
 node ./fclient.js
 ```
 
-3. Lastly start a worker process which fetches jobs from Faktory and
+3. In tab 3, start a worker process which fetches jobs from Faktory and
 executes them:
 
 ```
