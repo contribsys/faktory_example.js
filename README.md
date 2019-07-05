@@ -39,10 +39,15 @@ executes them:
 node ./fworker.js
 ```
 
+## Exploring
+
+While all three tabs are busy, go to [http://localhost7420](http://localhost7420) and check out the Faktory Web UI. Poke around each tab, you might not see much initially.
+
+If you stop the fworker.js process with Ctrl-C, you'll see jobs accumulate in the `default` queue in the Queues tab. If you go back to the Home tab and start the worker again, you'll see a spike of activity on the Dashboard graph as the worker processes all of the accumulated jobs almost immediately.
+
 ## Dependencies
 
-Faktory itself has very few dependencies but this example assumes you
-have a modern Node runtime installed. Run one of:
+Faktory itself has no dependencies but this example assumes you have a modern Node runtime installed. Run one of:
 
 ```
 brew install node
