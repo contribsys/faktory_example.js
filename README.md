@@ -3,6 +3,15 @@
 Faktory is designed to be as easy as possible for developers to run and
 use.
 
+## Clone
+
+First clone this repo to get the demo app:
+
+```
+git clone git@github.com:contribsys/faktory_example.js.git
+cd faktory_example.js
+```
+
 ## Installation
 
 You can use Homebrew to install Faktory on macOS.
