@@ -28,16 +28,18 @@ Upgrade to the latest version in the future with `brew upgrade faktory`.
 
 You'll need to open three Terminal windows/tabs.
 
-1. In tab 1, start Faktory.
+1. In tab 1, start Faktory and open the Web UI.
 
 
 ```
 faktory
+open http://localhost:7420
 ```
 
-2. In tab 2, start a client process pushing a new job to Faktory every second.
+2. In tab 2, install our JS dependencies and start a client process pushing a new job to Faktory every second.
 
 ```
+npm install
 node ./fclient.js
 ```
 
@@ -50,7 +52,7 @@ node ./fworker.js
 
 ## Exploring
 
-While all three tabs are busy, go to [http://localhost7420](http://localhost7420) and check out the Faktory Web UI. Poke around each tab, you might not see much initially.
+While all three tabs are busy, go back to [http://localhost7420](http://localhost7420) and check out the Faktory Web UI. Poke around each tab, you might not see much initially.
 
 If you stop the fworker.js process with Ctrl-C, you'll see jobs accumulate in the `default` queue in the Queues tab. If you go back to the Home tab and start the worker again, you'll see a spike of activity on the Dashboard graph as the worker processes all of the accumulated jobs almost immediately.
 
